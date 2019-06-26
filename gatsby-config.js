@@ -1,5 +1,11 @@
 let contentfulConfig
 
+import contentful from 'contentful'
+const client = contentful.createClient({
+  space: 'gpkrfkvq2nnl',
+  accessToken: 'r6_JHHYpicYD6HQ6B-yLL07xUhNvo5VvRL9JcQ-nHds'
+})
+
 try {
   // Load the Contentful config from the .contentful.json
   contentfulConfig = require('./.contentful')
