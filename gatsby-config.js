@@ -1,10 +1,6 @@
 let contentfulConfig
 
-import contentful from 'contentful'
-const client = contentful.createClient({
-  space: 'gpkrfkvq2nnl',
-  accessToken: 'r6_JHHYpicYD6HQ6B-yLL07xUhNvo5VvRL9JcQ-nHds'
-})
+
 
 try {
   // Load the Contentful config from the .contentful.json
@@ -13,9 +9,11 @@ try {
 
 // Overwrite the Contentful config with environment variables if they exist
 contentfulConfig = {
-  spaceId: process.env.CONTENTFUL_SPACE_ID || contentfulConfig.spaceId,
-  accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken,
+  spaceId: process.env.CONTENTFUL_SPACE_ID || "gpkrfkvq2nnl",
+  accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN || "r6_JHHYpicYD6HQ6B-yLL07xUhNvo5VvRL9JcQ-nHds",
 }
+
+
 
 const { spaceId, accessToken } = contentfulConfig
 
@@ -26,6 +24,11 @@ if (!spaceId || !accessToken) {
 }
 
 module.exports = {
+  siteMetadata: {
+    title: `Matrixblend Media`,
+    description: `Media that influence, insight, ideas, and inspiration.`,
+    author: `@_joshhead_`,
+  },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
     'gatsby-transformer-remark',
@@ -34,6 +37,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
-    }
-  ],
+    },
+  
+   
+  ]
 }
