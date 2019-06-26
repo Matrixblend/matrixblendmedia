@@ -38,6 +38,13 @@ module.exports = {
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
+    { 
+      resolve: 'gatsby-plugin-sass',
+      includePaths: ['src/sass/**/**'],
+      // options: {
+      //   implementation: require("sass"),
+      // },
+  },
     'gatsby-plugin-sharp',
      {
       resolve: 'gatsby-source-contentful',

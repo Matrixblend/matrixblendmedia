@@ -14,7 +14,7 @@ class MusicIndex extends React.Component {
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
         <div className={styles.hero}>
-          Blog
+          Music
         </div>
         <div className="wrapper">
           <h2 className="section-headline">Recent articles</h2>

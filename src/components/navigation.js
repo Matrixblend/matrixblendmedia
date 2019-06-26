@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './navigation.module.css'
+// import styles from './sass/main.scss'
 
 export default () => (
   <nav role="navigation">
