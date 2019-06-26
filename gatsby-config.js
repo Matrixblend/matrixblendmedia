@@ -28,6 +28,9 @@ module.exports = {
     title: `Matrixblend Media`,
     description: `Media that influence, insight, ideas, and inspiration.`,
     author: `@_joshhead_`,
+    url: "https://www.matrixblendmedia.com", // No trailing slash allowed!
+    image: "/images/", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@occlumency",
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
