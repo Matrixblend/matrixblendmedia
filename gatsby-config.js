@@ -41,9 +41,9 @@ module.exports = {
     { 
       resolve: 'gatsby-plugin-sass',
       includePaths: ['src/sass/**/**'],
-      // options: {
-      //   implementation: require("sass"),
-      // },
+      options: {
+        implementation: require("sass"),
+      },
   },
     'gatsby-plugin-sharp',
      {

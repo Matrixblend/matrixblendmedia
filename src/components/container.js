@@ -1,5 +1,10 @@
 import React from 'react'
+import styles from './main.css'
 
 export default ({ children }) => (
-  <div style={{ maxWidth: 1180, margin: '0 auto' }}>{children}</div>
+  <div id="main">
+  <div className="inner">
+  {children}
+  </div>
+  </div>
 )
