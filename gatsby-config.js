@@ -47,7 +47,7 @@ module.exports = {
   },
     'gatsby-plugin-sharp',
      {
-      resolve: 'gatsby-source-contentful',
+      resolve: '@nearform/gatsby-source-contentful',
       options: contentfulConfig,
     },
   
