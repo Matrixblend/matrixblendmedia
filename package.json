@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@nearform/gatsby-source-contentful": "^1.1.0",
     "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.46",

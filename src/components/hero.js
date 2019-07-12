@@ -16,7 +16,7 @@ export default ({ data }) => (
 										</ul>
 									</div>
 									<span className="image object">
-                  {/* <Img  alt={data.name} sizes={data.heroImage.sizes} /> */}
+                  <Img  alt={data.name} sizes={data.heroImage.sizes} />
 									</span>
 	  </section>
 
