@@ -32,7 +32,7 @@ module.exports = {
     author: `@_joshhead_`,
     url: "https://www.matrixblendmedia.com", // No trailing slash allowed!
     image: "/images/", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@occlumency",
+    twitterUsername: "@matrixblend",
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -47,7 +47,7 @@ module.exports = {
   },
     'gatsby-plugin-sharp',
      {
-      resolve: '@nearform/gatsby-source-contentful',
+      resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },
   
