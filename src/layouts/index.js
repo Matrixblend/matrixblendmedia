@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import base from './base.css'
+
+
 import Container from '../components/container'
 import Navigation from '../components/navigation'
+import Sidebar from '../components/sidebar'
 import Styles from '../components/main.css'
 
 class Template extends React.Component {
@@ -18,8 +21,9 @@ class Template extends React.Component {
     return (
       <Container>
         <Navigation />
-        {children()}
-      </Container>
+         {children()}
+         {/* <Sidebar /> */}
+         </Container>
     )
   }
 }

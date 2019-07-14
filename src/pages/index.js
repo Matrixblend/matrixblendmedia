@@ -2,7 +2,10 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
+import Info from '../components/info'
 import ArticlePreview from '../components/article-preview'
+
+
 
 class RootIndex extends React.Component {
   render() {
@@ -17,6 +20,7 @@ class RootIndex extends React.Component {
         <Helmet title={siteTitle} />
        
         <Hero data={author.node} />
+        <Info />
         <div className="wrapper">
           <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">
@@ -29,8 +33,10 @@ class RootIndex extends React.Component {
             })}
           </ul>
         </div>
-      </div>
+        </div>
+     
     )
+    
   }
 }
 
