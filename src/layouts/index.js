@@ -8,6 +8,7 @@ import Navigation from '../components/navigation'
 import Sidebar from '../components/sidebar'
 import Styles from '../components/main.css'
 
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -23,7 +24,8 @@ class Template extends React.Component {
         <Navigation />
          {children()}
          {/* <Sidebar /> */}
-         </Container>
+          </Container>
+         
     )
   }
 }
