@@ -3,9 +3,6 @@ import { Helmet } from "react-helmet"
 import $ from "jquery"
 
 
-
-
-
 export default ({ children }) => (
   <div id="main">
     <Helmet>
