@@ -13,14 +13,17 @@ export default ({ data }) => (
 					<p>{data.shortBio.shortBio}</p>
 					<ul className="actions">
 						<li>
+							
 							<a href="https://soundcloud.com/matrixblend" className="button big">Music Production</a>
-						{/* <Link className="button big" to={`/artist/${data.slug}`}>{data.title}</Link> */}
+						{/* <Link className="button big" to={`/blog/${data.slug}`}>{data.title}</Link> */}
 						</li>
 					</ul>
 				</div>
 				<span className="image object">
 				<Img  alt={data.name} sizes={data.heroImage.sizes} />
 				</span>
+				{/* <!-- Calendly link widget begin --> */}
+
 	  </section>
 	
 		

@@ -1,5 +1,9 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
+import $ from "jquery"
+window.$ = $
+
+
 
 
 export default ({ children }) => (
@@ -7,7 +11,7 @@ export default ({ children }) => (
     <Helmet>
           <meta charSet="utf-8" />
           <title>Matrixblend Media | inspire | Ideas | inspiration</title>
-          <script type="text/javascript" src='/js/breakpoints.min.js'></script>
+          
         </Helmet>
   <div className="inner">
   {children}
@@ -17,7 +21,7 @@ export default ({ children }) => (
           {/* <script type="text/javascript" src='/js/browser.min.js'></script>
           <script type="text/javascript" src='/js/breakpoints.min.js'></script>
           <script type="text/javascript" src='/js/util.min.js'></script> */}
-          <script type="text/javascript" src='/js/main.js'></script>
+          {/* <script type="text/javascript" src='/js/main.js'></script> */}
           
   </div>
 )
