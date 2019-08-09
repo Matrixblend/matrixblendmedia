@@ -6,8 +6,8 @@ export default ({ children }) => (
   <div id="main">
     <Helmet>
           <meta charSet="utf-8" />
-          <title>My Title</title>
-          <link rel="canonical" href="http://mysite.com/example" />
+          <title>Matrixblend Media | inspire | Ideas | inspiration</title>
+          <script type="text/javascript" src='/js/breakpoints.min.js'></script>
         </Helmet>
   <div className="inner">
   {children}
