@@ -17,7 +17,9 @@ class RootIndex extends React.Component {
 
       
       <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
+        <Helmet>
+          <title>{siteTitle}</title>
+        </Helmet>
        
         <Hero data={author.node} />
         <Info />

@@ -43,13 +43,13 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },{
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-144805370-1",
       },
     },
-  
+
    
   ]
 }
