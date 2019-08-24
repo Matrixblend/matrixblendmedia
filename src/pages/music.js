@@ -4,7 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
 import ArticlePreview from '../components/article-preview'
-
+import Player from '../templates/player'
 class MusicIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -13,10 +13,16 @@ class MusicIndex extends React.Component {
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
-        <div className={styles.hero}>
+        <div className={styles.heroMusic}>
           Music
         </div>
+      
+       
         <div className="wrapper">
+          <Player
+              storeId='102462'
+              />
+          
           <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">
             {posts.map(({ node }) => {
