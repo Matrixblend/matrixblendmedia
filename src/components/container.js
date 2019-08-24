@@ -5,11 +5,7 @@ import $ from "jquery"
 
 export default ({ children }) => (
   <div id="main">
-    <Helmet>
-          <meta charSet="utf-8" />
-          <title>Matrixblend Media | inspire | Ideas | inspiration</title>
-          
-        </Helmet>
+  
   <div className="inner">
   {children}
   </div>

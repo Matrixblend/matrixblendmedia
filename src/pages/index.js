@@ -17,8 +17,13 @@ class RootIndex extends React.Component {
 
       
       <div style={{ background: '#fff' }}>
-        <Helmet>
-          <title>{siteTitle}</title>
+          <Helmet defaultTitle="Matrixblend Media"
+            titleTemplate="Matrixblend Media %s">
+          <meta charSet="utf-8" />
+          <title>| Inspire | Ideas | Inspiration</title>
+          <meta name="Matrixblend Media" content="Inspiration | Home business | Music Business | Reviews" />
+    <meta property="og:type" content="article" />
+          <description>An blog information site providing information for entreprenuers, musicians, artist, developers, job seekers, visionaries. </description>
         </Helmet>
        
         <Hero data={author.node} />
