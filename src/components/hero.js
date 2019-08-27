@@ -1,29 +1,26 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import Link from 'gatsby-link'
+import AwesomeSlider from 'react-awesome-slider'
+
+
+const slider = (
+  <AwesomeSlider >
+    <div data-src="//live.staticflickr.com/65535/22599782331_8f7d89cdd1_k.jpg" />
+    <div data-src="//live.staticflickr.com/65535/48614325241_af47f75bb4_c.jpg" />
+    <div data-src="//live.staticflickr.com/65535/48613971828_cfc7bf65bf_c.jpg" />
+  </AwesomeSlider>
+);
 
 
 export default ({ data }) => (
   <section id="banner">
-				<div className="content">
-					<header>
-					<h1>{data.name}</h1>
-						<p>{data.title}</p>
-					</header>
-					<p>{data.shortBio.shortBio}</p>
-					<ul className="actions">
-						<li>
-							
-							<a href="https://soundcloud.com/matrixblend" className="button big">Music Production</a>
-						{/* <Link className="button big" to={`/blog/${data.slug}`}>{data.title}</Link> */}
-						</li>
-					</ul>
-				</div>
-				<span className="image object">
-				<Img  alt={data.name} sizes={data.heroImage.sizes} />
-				</span>
-				{/* <!-- Calendly link widget begin --> */}
-
+			{/* Offer free consultation service. */}
+			{/* Make this a scroller where the data comes from outsoureces - e.g. Google Docs. */}
+			<h1>Web Consultation: Use our experience to fix your web related issues.</h1>
+			{slider}
+			{/* Free Webinar/With one of our Featured host. */}
+			{/* Calendy account */}
 	  </section>
 	
 		

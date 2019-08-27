@@ -24,13 +24,14 @@ class RootIndex extends React.Component {
           <meta name="Matrixblend Media" content="Inspiration | Home business | Music Business | Reviews" />
     <meta property="og:type" content="article" />
           <description>An blog information site providing information for entreprenuers, musicians, artist, developers, job seekers, visionaries. </description>
-          <script type="text/javascript" src='/js/browser.min.js'></script>
+          <script type="text/javascript" src='public/js/browser.min.js'></script>
           <script type="text/javascript" src='/js/breakpoints.min.js'></script>
           <script type="text/javascript" src='/js/util.min.js'></script> 
           <script type="text/javascript" src='/js/main.js'></script>
         
         </Helmet>
-       
+
+     
         <Hero data={author.node} />
         <Info />
         <div className="wrapper">
