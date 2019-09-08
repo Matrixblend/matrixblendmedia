@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 
 export default () =>(
-<div id="sidebar" className="">
+<div id="" className="inactive">
 						<div className="inner">
 							<section id="search" className="alt">
 									<form method="post" action="#">
@@ -64,7 +64,7 @@ export default () =>(
 									<p className="copyright">2019 © Matrixblend Media. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
         </div>
-					<a href="#sidebar" className="toggle">Toggle</a>
+					<a href="#" className="toggle">Toggle</a>
 					<script type="text/javascript" src='/js/browser.min.js'></script>
           <script type="text/javascript" src='/js/breakpoints.min.js'></script>
 					<script type="text/javascript" src='/js/util.min.js'></script> 

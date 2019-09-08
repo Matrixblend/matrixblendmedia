@@ -8311,7 +8311,7 @@ button:disabled,
   height: 2em;
   line-height: 2em;
   opacity: 0.325;
-  position: absolute;
+  position: relative;
   right: 0;
   text-align: center;
   top: 0;
@@ -8336,7 +8336,7 @@ button:disabled,
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   background-color: #f5f6f7;
   font-size: 0.9em;
-  position: relative;
+  position: absolute;
   width: 26em;
 }
 #sidebar h2 {
@@ -8344,7 +8344,7 @@ button:disabled,
 }
 #sidebar > .inner {
   padding: 2.2222222222em 2.2222222222em 2.4444444444em 2.2222222222em;
-  position: relative;
+  position: absolutee;
   width: 26em;
 }
 #sidebar > .inner > * {
@@ -8554,7 +8554,7 @@ button:disabled,
 
 /* Banner */
 #banner {
-  padding: 6em 0 4em 0;
+  padding: 2em 0 0.1em 0;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;

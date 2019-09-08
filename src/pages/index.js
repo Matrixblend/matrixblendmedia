@@ -17,16 +17,20 @@ class RootIndex extends React.Component {
 
       
       <div style={{ background: '#fff' }}>
-          <Helmet defaultTitle="Matrixblend Media"
+          <Helmet defaultTitle={{siteTitle}}
             titleTemplate="Matrixblend Media %s">
           <meta charSet="utf-8" />
           <title>| Inspire | Ideas | Inspiration</title>
           <meta name="Matrixblend Media" content="Inspiration | Home business | Music Business | Reviews" />
-    <meta property="og:type" content="article" />
-          <description>An blog information site providing information for entreprenuers, musicians, artist, developers, job seekers, visionaries. </description>
-          <script type="text/javascript" src='public/js/browser.min.js'></script>
+          <meta property="og:type" content="article" />
+          <script
+          src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+          crossorigin="anonymous"></script>
+         
+          <script type="text/javascript" src='/js/browser.min.js'></script>
           <script type="text/javascript" src='/js/breakpoints.min.js'></script>
-          <script type="text/javascript" src='/js/util.min.js'></script> 
+          <script type="text/javascript" src='/js/util.js'></script> 
           <script type="text/javascript" src='/js/main.js'></script>
         
         </Helmet>

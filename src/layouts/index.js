@@ -22,8 +22,10 @@ class Template extends React.Component {
 
     return (
       <Container>
-        <Navigation />
+        
+        <Navigation /> 
         <Subnav />
+    
          {children()}
          
         

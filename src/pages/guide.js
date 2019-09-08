@@ -14,7 +14,7 @@ class GuideIndex extends React.Component {
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
         <div className={styles.hero}>
-          Money
+          The Guide: Download the free manual to all the best tools of the entertainment business to succeed.
         </div>
         <div className="wrapper">
           <h2 className="section-headline">Recent articles</h2>

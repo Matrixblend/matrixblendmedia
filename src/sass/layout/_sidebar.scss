@@ -21,7 +21,7 @@
 				height: _size(element-height) / 1.375;
 				line-height: _size(element-height) / 1.375;
 				opacity: 0.325;
-				position: absolute;
+				position: relative;
 				right: 0;
 				text-align: center;
 				top: 0;
@@ -45,7 +45,7 @@
 		));
 		background-color: _palette(bg-alt);
 		font-size: 0.9em;
-		position: relative;
+		position: absolute;
 		width: _size(sidebar-width);
 
 		h2 {
@@ -54,7 +54,7 @@
 
 		> .inner {
 			@include padding($pad, $pad, (0, 0, $pad, 0));
-			position: relative;
+			position: absolutee;
 			width: _size(sidebar-width);
 
 			> * {

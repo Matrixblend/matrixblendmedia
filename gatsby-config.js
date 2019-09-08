@@ -37,8 +37,14 @@ module.exports = {
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
+    "gatsby-plugin-awesome-slider",
     'gatsby-transformer-remark',
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet',{
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        useResolverUrlLoader: true,
+      }
+    },   
     'gatsby-plugin-sharp',
      {
       resolve: 'gatsby-source-contentful',
