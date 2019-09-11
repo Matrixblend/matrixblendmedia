@@ -8,6 +8,7 @@
     "url": "https://github.com/contentful/starter-gatsby-blog/issues"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.3.0",
     "breakpoints-js": "^1.0.6",
     "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
