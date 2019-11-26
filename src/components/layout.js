@@ -4,7 +4,7 @@ import './base.css'
 
 
 import Container from './container'
-import Navigation from './Header/navigation.jsx.js'
+import Navigation from './Header/navigation.jsx'
 
 
 

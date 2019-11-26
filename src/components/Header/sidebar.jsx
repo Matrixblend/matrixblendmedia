@@ -2,9 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import $ from 'jquery'
-import breakpoints from 'breakpoints-js'
 
-
+// import breakpoints from 'breakpoints-js'
 
 
 
@@ -13,38 +12,17 @@ class Sidebar extends React.Component {
 		super(props)
 		this.state = {
 			mobileOpen: false,
-			side: open,
-			left: false,
 			
 		}
 	
 	}
 	componentDidMount(){
+		
 		this.$head = $('head')
 		this.$sidebar = $('#sidebar')
 
-		// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ],
-			'xlarge-to-max':    '(min-width: 1681px)',
-			'small-to-xlarge':  '(min-width: 481px) and (max-width: 1680px)'
-		});
 
-		
-		// Inactive by default on <= large.
-		breakpoints.on('<=large', function() {
-			this.$sidebar.addClass('inactive');
-		});
-
-		breakpoints.on('>large', function() {
-			this.$sidebar.removeClass('inactive');
-		});
-
+	
 
 
 		
@@ -65,8 +43,7 @@ class Sidebar extends React.Component {
 	componentWillUnmount(){
 		this.$sidebar.off()
 	}
-	
-	
+
 
 
 	render(){
