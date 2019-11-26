@@ -25,7 +25,7 @@ export default ({ data }) => (
 						<li>
 							
 							<a href="https://soundcloud.com/matrixblend" className="button big">Music Production</a>
-						<Link className="button big" to={`/blog/${data.slug}`}>{data.title}</Link>
+						{/* <Link className="button big" to={`/blog/${data.slug}`}>{data.title}</Link> */}
 						</li>
 					</ul>
 				</div>
