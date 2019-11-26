@@ -9,10 +9,7 @@
 	#banner {
 		@include padding(6em, 0);
 		@include vendor('display', 'flex');
-		@include padding(0, 6em);
-		padding-top: 2em;
-		background-color: _palette(bg);
-		opacity: 90%;
+		
 		
 
 		h1 {

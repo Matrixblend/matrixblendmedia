@@ -8559,10 +8559,6 @@ button:disabled,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  padding: 0 6em 0.1em 6em;
-  padding-top: 2em;
-  background-color: #ffffff;
-  opacity: 90%;
 }
 #banner h1 {
   margin-top: -0.125em;
