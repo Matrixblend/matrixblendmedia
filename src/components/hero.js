@@ -14,7 +14,7 @@ export default ({ data }) => (
 		         
 						 
 					<video
-            width="1360"
+            width="100%"
             height="703"
             autoPlay
            >
