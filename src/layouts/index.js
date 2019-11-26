@@ -5,6 +5,7 @@ import './base.css'
 
 import Container from '../components/container'
 import Navigation from '../components/Header/navigation.jsx'
+import Footer from '../components/Footer/Footer'
 
 
 class Template extends React.Component {
@@ -22,6 +23,7 @@ class Template extends React.Component {
       <Container>
         <Navigation />
         {children()}
+        <Footer />
        </Container>
         
     
