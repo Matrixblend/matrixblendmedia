@@ -4,6 +4,8 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
 import ArticlePreview from '../components/article-preview'
+import videoSrc from '../videos/logoVideo.mp4'
+import Footer from '../components/Footer/Footer'
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,7 +16,15 @@ class BlogIndex extends React.Component {
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
         <div className={styles.hero}>
-          Blog
+          					 
+					<video
+            width="100%"
+            height="1250"
+            autoPlay
+           >
+            <source src={videoSrc} type="video/mp4" />
+          </video>  
+         
         </div>
         <div className="wrapper">
           <h2 className="section-headline">Recent articles</h2>
@@ -28,6 +38,7 @@ class BlogIndex extends React.Component {
             })}
           </ul>
         </div>
+        <Footer />
       </div>
     )
   }

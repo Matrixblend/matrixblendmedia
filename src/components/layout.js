@@ -4,6 +4,7 @@ import './base.css'
 
 
 import Container from './container'
+import Footer from '../components/Footer/Footer'
 import Navigation from './Header/navigation.jsx'
 
 
@@ -24,8 +25,9 @@ class Layout extends React.Component {
         
         <Navigation /> 
          {children}
-        </Container>
+         </Container>
          
+        
     )
   }
 }
