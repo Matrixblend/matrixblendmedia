@@ -1,15 +1,17 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import './base.css'
 
 
-import Container from '../components/container'
-import Navigation from '../components/Header/navigation.jsx'
+import Container from './container'
+import Navigation from './Header/navigation.jsx.js'
 
 
-class Template extends React.Component {
+
+class Layout extends React.Component {
   render() {
     const { location, children } = this.props
+    const rootPath = `${__PATH_PREFIX__}/`
     let header
 
     let rootPath = `/`
@@ -19,15 +21,13 @@ class Template extends React.Component {
 
     return (
       <Container>
-        <Navigation />
-      
-         {children()}
-         
         
-          </Container>
+        <Navigation /> 
+         {children}
+        </Container>
          
     )
   }
 }
 
-export default Template
+export default Layout
