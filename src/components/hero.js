@@ -15,7 +15,7 @@ export default ({ data }) => (
 						 
 					<video
             width="100%"
-            height="703"
+            height="766"
             autoPlay
            >
             <source src={videoSrc} type="video/mp4" />
