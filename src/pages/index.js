@@ -16,7 +16,7 @@ class RootIndex extends React.Component {
 
     return (
 
-      
+      <div>
       <div style={{ background: '#fff' }}>
           <Helmet defaultTitle="Matrixblend Media"
             titleTemplate="Matrixblend Media %s">
@@ -42,6 +42,8 @@ class RootIndex extends React.Component {
               )
             })}
           </ul>
+        </div>
+       
         </div>
         <Footer />
         </div>
