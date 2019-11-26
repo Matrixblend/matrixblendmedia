@@ -10,16 +10,8 @@ import videoSrc from "../videos/logoVideo.mp4"
 
 
 export default ({ data }) => (
-	<Parallax video="test" image={('')}>
-		         
-						 
-					<video
-            width="100%"
-            height="766"
-            autoPlay
-           >
-            <source src={videoSrc} type="video/mp4" />
-          </video>  
+	
+		    
 
   <section id="banner">
 		
@@ -43,6 +35,6 @@ export default ({ data }) => (
 				{/* <!-- Calendly link widget begin --> */}
 
 	  </section>
-	</Parallax>
+	
 		
 )
