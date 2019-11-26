@@ -32,7 +32,7 @@ module.exports = {
     description: `Media that influence, insight, ideas, and inspiration.`,
     author: `@_joshhead_`,
     url: "https://www.matrixblendmedia.com", // No trailing slash allowed!
-    image: "/static/favicon.png", // Path to your image you placed in the 'static' folder
+    image: "/favicon.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@matrixblend",
   },
   pathPrefix: '/gatsby-contentful-starter',
