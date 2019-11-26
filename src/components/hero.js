@@ -1,10 +1,18 @@
 import React from 'react'
+import classNames from "classnames"
+
 import Img from 'gatsby-image'
 import Link from 'gatsby-link'
+import '../jss/material-kit-react/components/parallaxStyle'
+import Parallax from './Parallex/Parallax'
+
 
 
 export default ({ data }) => (
+	<Parallax video="test" image={('https://picsum.photos/1200/1300')}>
+
   <section id="banner">
+		
 				<div className="content">
 					<header>
 					<h1>{data.name}</h1>
@@ -25,6 +33,6 @@ export default ({ data }) => (
 				{/* <!-- Calendly link widget begin --> */}
 
 	  </section>
-	
+	</Parallax>
 		
 )

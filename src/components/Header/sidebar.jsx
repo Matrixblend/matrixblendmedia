@@ -30,7 +30,7 @@ class Sidebar extends React.Component {
 				// Prevent default.
 				e.preventDefault();
 				e.stopPropagation();
-				console.log(e)
+				
 			// Toggle.
 			$('#sidebar').toggleClass('inactive' );
 		})
@@ -103,7 +103,7 @@ class Sidebar extends React.Component {
 												<ul className="contact">
 													<li className="icon solid fa-envelope"><a href="#">matrixblend@gmail.com</a></li>
 													<li className="icon solid fa-phone">518.768.1257</li>
-													<li className="icon solid fa-home">hollywood, CA</li>
+													<li className="icon solid fa-home">Hollywood, CA</li>
 												</ul>
 											</section>
 			

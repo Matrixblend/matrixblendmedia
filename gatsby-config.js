@@ -32,14 +32,15 @@ module.exports = {
     description: `Media that influence, insight, ideas, and inspiration.`,
     author: `@_joshhead_`,
     url: "https://www.matrixblendmedia.com", // No trailing slash allowed!
-    image: "/images/icon.png", // Path to your image you placed in the 'static' folder
+    image: "/static/favicon.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@matrixblend",
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-material-ui`,
+    `gatsby-plugin-sharp`,
      {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
